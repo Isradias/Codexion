@@ -14,10 +14,11 @@
 
 int	main(int argc, char **argv)
 {
-	(void)argv;
-	if (argc != 9)
+	t_config	config;
+
+	if (!parse_config(argc, argv, &config))
 	{
-		fprintf(stderr, "Error: expected 8 arguments\n");
+		fprintf(stderr, "Error: invalid arguments\n");
 		return (1);
 	}
 	return (0);

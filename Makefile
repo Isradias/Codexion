@@ -2,7 +2,7 @@ NAME = codexion
 CC = cc
 CFLAGS = -Wall -Wextra -Werror -pthread
 INCLUDES = -Iinclude
-SRC = src/main.c src/parse.c
+SRC = src/main.c src/parse.c src/simulation.c
 OBJ = $(SRC:.c=.o)
 
 all: $(NAME)

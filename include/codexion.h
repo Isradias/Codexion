@@ -47,7 +47,7 @@ typedef struct s_game
 	pthread_mutex_t	state;
 	pthread_mutex_t	log;
 	pthread_cond_t	changed;
-}t_game;
+}	t_game;
 
 int	main(int argc, char **argv);
 int	parse_config(int argc, char **argv, t_config *config);
